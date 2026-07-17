@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://dd2g1ql3m0kik"]
+
+[ext_resource type="Texture2D" uid="uid://g7v0tmryqfcf" path="res://dry pond scene.png" id="1_cstia"]
+[ext_resource type="Script" uid="uid://cwvqcyupmmbe1" path="res://pond_scene.gd" id="1_euu1u"]
+[ext_resource type="Texture2D" uid="uid://cpgo7oi7j2lc6" path="res://GONE pond scene.png" id="3_jyuj3"]
+[ext_resource type="Texture2D" uid="uid://0n7pxctq1cyi" path="res://Buttons/down arrow.png" id="3_nddw0"]
+[ext_resource type="Texture2D" uid="uid://5s4nyru27bi6" path="res://Buttons/down arrow hovered.png" id="4_oe64w"]
+[ext_resource type="Texture2D" uid="uid://c4raiwgom81ir" path="res://pond hover.png" id="5_p28lt"]
+[ext_resource type="Texture2D" uid="uid://ceyuuudfst5ct" path="res://Buttons/Dialogue Box.png" id="7_wqfod"]
+[ext_resource type="Texture2D" uid="uid://b0y8clbkmt3as" path="res://Buttons/One(1)OptionDialogue.png" id="8_wqfkj"]
+[ext_resource type="Texture2D" uid="uid://c0cotv503yvct" path="res://Buttons/Two(2)OptionDialogue.png" id="9_xsrjg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pq2sl"]
+texture = ExtResource("3_nddw0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d7527"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_58do8"]
+texture = ExtResource("4_oe64w")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pq2sl"]
+size = Vector2(354, 97)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq2sl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58do8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jyuj3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wqfod"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wqfkj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xsrjg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ape3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t73w4"]
+
+[node name="Node2D" type="Node2D" unique_id=429996888]
+script = ExtResource("1_euu1u")
+
+[node name="DryPondScene" type="Sprite2D" parent="." unique_id=1748569667]
+position = Vector2(580, 328)
+scale = Vector2(0.8, 0.599)
+texture = ExtResource("1_cstia")
+
+[node name="GonePondScene" type="Sprite2D" parent="." unique_id=466071439]
+visible = false
+position = Vector2(580, 328)
+scale = Vector2(0.8, 0.597)
+texture = ExtResource("3_jyuj3")
+
+[node name="HomeButton" type="Button" parent="." unique_id=993415512]
+offset_left = 624.0
+offset_top = 288.0
+offset_right = 784.65137
+offset_bottom = 408.91278
+rotation = 3.1415927
+theme_override_styles/normal = SubResource("StyleBoxTexture_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_d7527")
+theme_override_styles/hover = SubResource("StyleBoxTexture_58do8")
+
+[node name="pondarea" type="Area2D" parent="." unique_id=38092484]
+
+[node name="PondHover" type="Sprite2D" parent="pondarea" unique_id=2098441188]
+visible = false
+position = Vector2(369, 449.5)
+scale = Vector2(0.80644006, 0.6535714)
+texture = ExtResource("5_p28lt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pondarea" unique_id=1852330998]
+position = Vector2(360, 449)
+shape = SubResource("RectangleShape2D_pq2sl")
+
+[node name="DialogueBox" type="Sprite2D" parent="." unique_id=214885390]
+visible = false
+position = Vector2(235, 158.00002)
+scale = Vector2(0.62968755, 0.6754631)
+texture = ExtResource("7_wqfod")
+
+[node name="DialogueLabel" type="Label" parent="DialogueBox" unique_id=624537965]
+offset_left = -282.67984
+offset_top = -143.60521
+offset_right = 252.50613
+offset_bottom = 31.089767
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="ContinueSprite" type="Sprite2D" parent="." unique_id=1133987541]
+visible = false
+position = Vector2(232.00002, 343)
+scale = Vector2(0.67604166, 0.5962963)
+texture = ExtResource("8_wqfkj")
+
+[node name="ContinueButton" type="Button" parent="ContinueSprite" unique_id=642001265]
+offset_left = -229.2758
+offset_top = -189.50311
+offset_right = 173.06624
+offset_bottom = -114.42236
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_58do8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0qlrd")
+text = "Continue"
+
+[node name="ChoiceBox" type="Sprite2D" parent="." unique_id=483926310]
+visible = false
+position = Vector2(228.25, 336.25)
+scale = Vector2(0.69947916, 0.55648154)
+texture = ExtResource("9_xsrjg")
+
+[node name="Choice1" type="Button" parent="ChoiceBox" unique_id=1454920577]
+anchors_preset = -1
+anchor_left = 0.47400004
+anchor_top = 0.216
+anchor_right = 0.47400004
+anchor_bottom = 0.216
+offset_left = -682.7094
+offset_top = -305.77472
+offset_right = -283.8412
+offset_bottom = -230.83632
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jyuj3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wqfod")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wqfkj")
+
+[node name="Choice2" type="Button" parent="ChoiceBox" unique_id=1610753022]
+anchors_preset = -1
+anchor_left = 0.47400004
+anchor_top = 0.42400002
+anchor_right = 0.47400004
+anchor_bottom = 0.42400002
+offset_left = -681.2798
+offset_top = -310.27448
+offset_right = -279.55234
+offset_bottom = -229.40926
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xsrjg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4ape3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t73w4")
+
+[connection signal="pressed" from="HomeButton" to="." method="_on_home_button_pressed"]
+[connection signal="input_event" from="pondarea" to="." method="_on_pondarea_input_event"]
+[connection signal="mouse_entered" from="pondarea" to="." method="_on_pondarea_mouse_entered"]
+[connection signal="mouse_shape_exited" from="pondarea" to="." method="_on_pondarea_mouse_shape_exited"]
+[connection signal="pressed" from="ContinueSprite/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="ChoiceBox/Choice1" to="." method="_on_choice_1_pressed"]

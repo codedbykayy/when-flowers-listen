@@ -1,0 +1,202 @@
+[gd_scene format=3 uid="uid://di0nveiacwr3w"]
+
+[ext_resource type="Texture2D" uid="uid://dflx6uhljrlmn" path="res://campfire scene.png" id="1_jkq6h"]
+[ext_resource type="Script" uid="uid://14k0ri6peuah" path="res://campfire_scene.gd" id="1_mecu5"]
+[ext_resource type="Texture2D" uid="uid://b5dowqsr2o480" path="res://Buttons/dialogueboxnightl.png" id="2_7weqj"]
+[ext_resource type="Texture2D" uid="uid://cvsmn8f0kr87n" path="res://Buttons/continue(dark).png" id="3_mecu5"]
+[ext_resource type="Texture2D" uid="uid://dk47w8qf7mee3" path="res://Buttons/Two(2)OptionDialogueNIGHT.png" id="4_q5qrr"]
+[ext_resource type="Texture2D" uid="uid://bhvcb8o7i87lv" path="res://journal.png" id="6_q5qrr"]
+[ext_resource type="Texture2D" uid="uid://0n7pxctq1cyi" path="res://Buttons/down arrow.png" id="7_obm56"]
+[ext_resource type="Texture2D" uid="uid://5s4nyru27bi6" path="res://Buttons/down arrow hovered.png" id="8_t18cg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mq4l8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gm1qa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3cqb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dpm15"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6thqp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_paycm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq2sl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d7527"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58do8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v5cue"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_it8n7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pq2sl"]
+texture = ExtResource("7_obm56")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3pf53"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_58do8"]
+texture = ExtResource("8_t18cg")
+
+[node name="Node2D" type="Node2D" unique_id=1859583009]
+script = ExtResource("1_mecu5")
+
+[node name="CampfireScene" type="Sprite2D" parent="." unique_id=725409539]
+position = Vector2(574.5, 323)
+scale = Vector2(1.2010417, 1.1925926)
+texture = ExtResource("1_jkq6h")
+
+[node name="Dialogueboxnight" type="Sprite2D" parent="." unique_id=835257651]
+visible = false
+position = Vector2(265, 161)
+scale = Vector2(0.7114583, 0.7)
+texture = ExtResource("2_7weqj")
+
+[node name="DialogueText" type="Label" parent="Dialogueboxnight" unique_id=1440949199]
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.40600002
+anchor_right = 0.48200002
+anchor_bottom = 0.40600002
+offset_left = -743.83276
+offset_top = -364.95428
+offset_right = -216.74637
+offset_bottom = -174.81145
+theme_override_font_sizes/font_size = 27
+
+[node name="Continue(dark)" type="Sprite2D" parent="." unique_id=1006950358]
+visible = false
+position = Vector2(261, 366)
+scale = Vector2(0.7484374, 0.7018518)
+texture = ExtResource("3_mecu5")
+
+[node name="ContinueButton" type="Button" parent="Continue(dark)" unique_id=1464779298]
+anchors_preset = -1
+anchor_left = 0.47300002
+anchor_top = 0.224
+anchor_right = 0.47300002
+anchor_bottom = 0.224
+offset_left = -678.5477
+offset_top = -307.60913
+offset_right = -279.06546
+offset_bottom = -235.49304
+
+[node name="ChoiceBox" type="Sprite2D" parent="." unique_id=1445941007]
+visible = false
+position = Vector2(254.25002, 367.99997)
+scale = Vector2(0.7765625, 0.7259259)
+texture = ExtResource("4_q5qrr")
+
+[node name="Choice1" type="Button" parent="ChoiceBox" unique_id=347466727]
+anchors_preset = -1
+anchor_left = 0.476
+anchor_top = 0.22700001
+anchor_right = 0.476
+anchor_bottom = 0.22700001
+offset_left = -685.20953
+offset_top = -314.05957
+offset_right = -274.42487
+offset_bottom = -226.16165
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mq4l8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gm1qa")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_v3cqb")
+
+[node name="Choice2" type="Button" parent="ChoiceBox" unique_id=1828740800]
+anchors_preset = -1
+anchor_left = 0.47400004
+anchor_top = 0.42900002
+anchor_right = 0.47400004
+anchor_bottom = 0.42900002
+offset_left = -683.28955
+offset_top = -311.55792
+offset_right = -276.36804
+offset_bottom = -228.90485
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dpm15")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6thqp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_paycm")
+
+[node name="Journal" type="Sprite2D" parent="." unique_id=233425249]
+visible = false
+position = Vector2(574, 352.00003)
+scale = Vector2(0.54558015, 0.49355432)
+texture = ExtResource("6_q5qrr")
+
+[node name="Flower1" type="Button" parent="Journal" unique_id=1756228288]
+anchors_preset = -1
+anchor_left = 0.17300001
+anchor_top = 0.194
+anchor_right = 0.17300001
+anchor_bottom = 0.194
+offset_left = -789.37994
+offset_top = -607.8035
+offset_right = -492.4483
+offset_bottom = -478.23633
+theme_override_colors/font_color = Color(0.11764706, 0.02745098, 0.003921569, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_d7527")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_58do8")
+
+[node name="Label1" type="Label" parent="Journal" unique_id=228819855]
+anchors_preset = -1
+anchor_left = 0.611
+anchor_top = 0.21200001
+anchor_right = 0.611
+anchor_bottom = 0.21200001
+offset_left = -804.07996
+offset_top = -592.9074
+offset_right = -377.0116
+offset_bottom = -493.6277
+theme_override_colors/font_color = Color(0.11764706, 0.02745098, 0.003921569, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="Flower2" type="Button" parent="Journal" unique_id=1266539370]
+anchors_preset = -1
+anchor_left = 0.171
+anchor_top = 0.337
+anchor_right = 0.171
+anchor_bottom = 0.337
+offset_left = -786.4839
+offset_top = -611.1425
+offset_right = -495.05115
+offset_bottom = -475.39258
+theme_override_colors/font_color = Color(0.11764706, 0.02745098, 0.003921569, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0qlrd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v5cue")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_it8n7")
+
+[node name="Label2" type="Label" parent="Journal" unique_id=1859617599]
+anchors_preset = -1
+anchor_left = 0.61200005
+anchor_top = 0.33200002
+anchor_right = 0.61200005
+anchor_bottom = 0.33200002
+offset_left = -805.528
+offset_top = -595.582
+offset_right = -372.961
+offset_bottom = -489.51093
+theme_override_colors/font_color = Color(0.11764706, 0.02745098, 0.003921569, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="BackButton" type="Button" parent="." unique_id=2041887954]
+visible = false
+offset_left = 198.0
+offset_top = 262.0
+offset_right = 347.8303
+offset_bottom = 399.80313
+rotation = 1.5707964
+theme_override_styles/normal = SubResource("StyleBoxTexture_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3pf53")
+theme_override_styles/hover = SubResource("StyleBoxTexture_58do8")
+
+[connection signal="pressed" from="ChoiceBox/Choice1" to="." method="_on_choice_1_pressed"]
+[connection signal="pressed" from="ChoiceBox/Choice2" to="." method="_on_choice_2_pressed"]
+[connection signal="pressed" from="Journal/Flower1" to="." method="_on_flower_1_pressed"]
+[connection signal="pressed" from="Journal/Flower2" to="." method="_on_flower_2_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

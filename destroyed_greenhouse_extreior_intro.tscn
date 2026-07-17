@@ -1,0 +1,226 @@
+[gd_scene format=3 uid="uid://cqb5cfok552b8"]
+
+[ext_resource type="Script" uid="uid://b8v7mtjy5wfou" path="res://destroyed_exterior_intro.gd" id="1_pps7v"]
+[ext_resource type="Texture2D" uid="uid://bimg6ndj56m55" path="res://Dead Dark Exterior.png" id="2_ymfvv"]
+[ext_resource type="Texture2D" uid="uid://b5dowqsr2o480" path="res://Buttons/dialogueboxnightl.png" id="3_hacpm"]
+[ext_resource type="Texture2D" uid="uid://pd7a704ga546" path="res://night1.png" id="3_jymgc"]
+[ext_resource type="Texture2D" uid="uid://cvsmn8f0kr87n" path="res://Buttons/continue(dark).png" id="4_jymgc"]
+[ext_resource type="Texture2D" uid="uid://be3vq15876tuy" path="res://door hover.png" id="5_ymfvv"]
+[ext_resource type="Texture2D" uid="uid://dqtsagttlqja6" path="res://day time.png" id="6_4dkml"]
+[ext_resource type="Texture2D" uid="uid://c47u84du81mu1" path="res://campfire hoverfinal.png" id="6_hacpm"]
+[ext_resource type="Texture2D" uid="uid://bkwg7ly4vv3kq" path="res://day1 w watering can.png" id="7_l8sv8"]
+[ext_resource type="Texture2D" uid="uid://cctg5ey8kvbrl" path="res://watering can hover.png" id="8_p1mga"]
+[ext_resource type="Texture2D" uid="uid://dk47w8qf7mee3" path="res://Buttons/Two(2)OptionDialogueNIGHT.png" id="8_truh5"]
+[ext_resource type="Texture2D" uid="uid://ceyuuudfst5ct" path="res://Buttons/Dialogue Box.png" id="9_p1mga"]
+[ext_resource type="Texture2D" uid="uid://b0y8clbkmt3as" path="res://Buttons/One(1)OptionDialogue.png" id="10_4njew"]
+[ext_resource type="Texture2D" uid="uid://0n7pxctq1cyi" path="res://Buttons/down arrow.png" id="14_cn0xn"]
+[ext_resource type="Texture2D" uid="uid://5s4nyru27bi6" path="res://Buttons/down arrow hovered.png" id="15_pq4cq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58do8"]
+size = Vector2(51.145958, 45.833313)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qlrd"]
+size = Vector2(68.39488, 55.00001)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_71ve4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ymfvv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hacpm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pq2sl"]
+size = Vector2(327, 203)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7527"]
+size = Vector2(236.5, 105)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq2sl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d7527"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58do8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v5cue"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_it8n7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pq2sl"]
+texture = ExtResource("14_cn0xn")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mq4l8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gm1qa"]
+texture = ExtResource("15_pq4cq")
+
+[node name="GreenhouseExterior(Beg)" type="Node2D" unique_id=871946850]
+script = ExtResource("1_pps7v")
+
+[node name="DeadDarkExterior" type="Sprite2D" parent="." unique_id=1825698866]
+position = Vector2(579, 328)
+scale = Vector2(1.21575, 1.2)
+texture = ExtResource("2_ymfvv")
+
+[node name="FireLit" type="Sprite2D" parent="." unique_id=285664320]
+visible = false
+position = Vector2(579, 328)
+scale = Vector2(1.201, 1.2)
+texture = ExtResource("3_jymgc")
+
+[node name="DialogueBoxNight" type="Sprite2D" parent="." unique_id=1509149743]
+position = Vector2(926.25, 211)
+scale = Vector2(0.63177085, 0.6962963)
+texture = ExtResource("3_hacpm")
+
+[node name="Continue(dark)" type="Sprite2D" parent="." unique_id=543436141]
+position = Vector2(948, 407)
+scale = Vector2(0.74270844, 0.6518519)
+texture = ExtResource("4_jymgc")
+
+[node name="DayTime" type="Sprite2D" parent="." unique_id=934050942]
+visible = false
+position = Vector2(579.86, 328)
+scale = Vector2(1.2142917, 1.2)
+texture = ExtResource("6_4dkml")
+
+[node name="Day1WWateringCan" type="Sprite2D" parent="." unique_id=1704981397]
+visible = false
+position = Vector2(580.5, 328)
+scale = Vector2(1.2135416, 1.2)
+texture = ExtResource("7_l8sv8")
+
+[node name="WaterCanArea" type="Area2D" parent="Day1WWateringCan" unique_id=985103569]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Day1WWateringCan/WaterCanArea" unique_id=44098649]
+position = Vector2(-363.01508, 174.58334)
+shape = SubResource("RectangleShape2D_58do8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Day1WWateringCan/WaterCanArea" unique_id=118999577]
+position = Vector2(-402.12878, 206.66669)
+shape = SubResource("RectangleShape2D_0qlrd")
+
+[node name="WateringCanHover" type="Sprite2D" parent="Day1WWateringCan/WaterCanArea" unique_id=648282349]
+visible = false
+position = Vector2(-384.41205, 197.5)
+scale = Vector2(1.149528, 1.1541667)
+texture = ExtResource("8_p1mga")
+
+[node name="DialogueBoxDay" type="Sprite2D" parent="." unique_id=1310829421]
+visible = false
+position = Vector2(925.99994, 207.99998)
+scale = Vector2(0.6270834, 0.6777777)
+texture = ExtResource("9_p1mga")
+
+[node name="ContinueDay" type="Sprite2D" parent="." unique_id=1063202796]
+visible = false
+position = Vector2(950.49994, 405)
+scale = Vector2(0.76354164, 0.63333327)
+texture = ExtResource("10_4njew")
+
+[node name="ContinueButton" type="Button" parent="." unique_id=885228989]
+offset_left = 777.0
+offset_top = 283.0
+offset_right = 1070.0
+offset_bottom = 337.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_71ve4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ymfvv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hacpm")
+text = "Continue"
+
+[node name="DialogueLabel" type="Label" parent="." unique_id=181394873]
+offset_left = 743.0
+offset_top = 109.0
+offset_right = 1088.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+
+[node name="FrontDoor" type="Area2D" parent="." unique_id=256991781]
+position = Vector2(635, 361)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrontDoor" unique_id=1392957250]
+visible = false
+position = Vector2(-33.5, 30.5)
+shape = SubResource("RectangleShape2D_pq2sl")
+
+[node name="DoorHover" type="Sprite2D" parent="." unique_id=22100303]
+visible = false
+position = Vector2(609.5, 352.75003)
+scale = Vector2(1.215625, 1.1712962)
+texture = ExtResource("5_ymfvv")
+
+[node name="CampfireArea" type="Area2D" parent="." unique_id=538972664]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CampfireArea" unique_id=1992921650]
+position = Vector2(863.75, 586.5)
+shape = SubResource("RectangleShape2D_d7527")
+
+[node name="CampfireHoverfinal" type="Sprite2D" parent="CampfireArea" unique_id=1071605782]
+visible = false
+position = Vector2(866.99994, 589.875)
+scale = Vector2(0.81125, 0.84875)
+texture = ExtResource("6_hacpm")
+
+[node name="ChoiceBox" type="Sprite2D" parent="." unique_id=2103841806]
+visible = false
+position = Vector2(949, 409.25)
+scale = Vector2(0.75624996, 0.6768518)
+texture = ExtResource("8_truh5")
+
+[node name="Choice1" type="Button" parent="ChoiceBox" unique_id=226284084]
+visible = false
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.231
+anchor_right = 0.467
+anchor_bottom = 0.231
+offset_left = -675.75806
+offset_top = -314.22015
+offset_right = -268.48535
+offset_bottom = -228.89865
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_d7527")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_58do8")
+
+[node name="Choice2" type="Button" parent="ChoiceBox" unique_id=1519885992]
+visible = false
+anchors_preset = -1
+anchor_left = 0.47500002
+anchor_top = 0.42600003
+anchor_right = 0.47500002
+anchor_bottom = 0.42600003
+offset_left = -683.43805
+offset_top = -311.6679
+offset_right = -276.16522
+offset_bottom = -227.82387
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0qlrd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v5cue")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_it8n7")
+
+[node name="PondArrow" type="Button" parent="." unique_id=746765663]
+visible = false
+offset_left = 1014.0
+offset_top = 497.0
+offset_right = 1161.0
+offset_bottom = 618.70776
+rotation = 4.712389
+theme_override_styles/normal = SubResource("StyleBoxTexture_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mq4l8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gm1qa")
+
+[connection signal="input_event" from="Day1WWateringCan/WaterCanArea" to="." method="_on_water_can_area_input_event"]
+[connection signal="mouse_entered" from="Day1WWateringCan/WaterCanArea" to="." method="_on_water_can_area_mouse_entered"]
+[connection signal="mouse_exited" from="Day1WWateringCan/WaterCanArea" to="." method="_on_water_can_area_mouse_exited"]
+[connection signal="input_event" from="FrontDoor" to="." method="_on_front_door_input_event"]
+[connection signal="mouse_entered" from="FrontDoor" to="." method="_on_front_door_mouse_entered"]
+[connection signal="mouse_exited" from="FrontDoor" to="." method="_on_front_door_mouse_exited"]
+[connection signal="input_event" from="CampfireArea" to="." method="_on_campfire_area_input_event"]
+[connection signal="mouse_entered" from="CampfireArea" to="." method="_on_campfire_area_mouse_entered"]
+[connection signal="mouse_exited" from="CampfireArea" to="." method="_on_campfire_area_mouse_exited"]
+[connection signal="pressed" from="ChoiceBox/Choice1" to="." method="_on_choice_1_pressed"]
+[connection signal="pressed" from="ChoiceBox/Choice2" to="." method="_on_choice_2_pressed"]
+[connection signal="pressed" from="PondArrow" to="." method="_on_pond_arrow_pressed"]

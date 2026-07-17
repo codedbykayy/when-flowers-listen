@@ -1,0 +1,470 @@
+[gd_scene format=3 uid="uid://bq8c1k3qn3qf"]
+
+[ext_resource type="Texture2D" uid="uid://b0gwv78kitwnu" path="res://Interior BASE-export.png" id="1_3y3q6"]
+[ext_resource type="Script" uid="uid://526yax0vtuew" path="res://interior.gd" id="1_demxp"]
+[ext_resource type="Texture2D" uid="uid://pj128vjjg4dh" path="res://back door planks.png" id="2_0qxeo"]
+[ext_resource type="Texture2D" uid="uid://blwjg3d6uitce" path="res://Leftdoorplanks.png" id="2_iikiw"]
+[ext_resource type="Texture2D" uid="uid://b3pcv8bb0a8wf" path="res://nightinteriorwindows.png" id="2_s0tvn"]
+[ext_resource type="Texture2D" uid="uid://bfi0kapkisc2h" path="res://Removable Rubble/large rubble pile-export.png" id="3_wfp5n"]
+[ext_resource type="Texture2D" uid="uid://c8igysipomftk" path="res://Removable Rubble/large rubble with shadow(foreground).png" id="4_iflsb"]
+[ext_resource type="Texture2D" uid="uid://k4ly0vsc8ach" path="res://rightdoorplanks.png" id="5_yih8l"]
+[ext_resource type="Texture2D" uid="uid://bnjnt8h48bo1u" path="res://empty table with shadow.png" id="6_m7vh1"]
+[ext_resource type="Texture2D" uid="uid://cbbsolt0cvlsw" path="res://Removable Rubble/potting soil closed.png" id="7_s0tvn"]
+[ext_resource type="Texture2D" uid="uid://bfjehusrosyla" path="res://Removable Rubble/medium rubble pile.png" id="8_36sw1"]
+[ext_resource type="Texture2D" uid="uid://i53b5yshyqj6" path="res://empty usable pot-export.png" id="10_q1ktq"]
+[ext_resource type="Texture2D" uid="uid://dxrifng88qugc" path="res://Removable Rubble/tiny rock rubble.png" id="11_v4rrh"]
+[ext_resource type="Texture2D" uid="uid://dc7lyhbmx0spg" path="res://Removable Rubble/small rubble w shadow.png" id="12_5517d"]
+[ext_resource type="Texture2D" uid="uid://bo8d514xywptl" path="res://Removable Rubble/broken large shelf-export.png" id="14_36sw1"]
+[ext_resource type="Texture2D" uid="uid://ceyuuudfst5ct" path="res://Buttons/Dialogue Box.png" id="15_rhcas"]
+[ext_resource type="Texture2D" uid="uid://bu7mbtx1b1p2t" path="res://Removable Rubble/tiny rock hover.png" id="16_a85vl"]
+[ext_resource type="Texture2D" uid="uid://dohh85nqft6b4" path="res://Removable Rubble/small rubble hover.png" id="17_ivyd8"]
+[ext_resource type="Texture2D" uid="uid://c20o5hmmbq2kk" path="res://Removable Rubble/large rubble pile hover.png" id="18_5xbg8"]
+[ext_resource type="Texture2D" uid="uid://cvq1sd0fjs7yi" path="res://pot with soil-export.png" id="19_6hh5s"]
+[ext_resource type="Texture2D" uid="uid://b544d51x1jngr" path="res://Removable Rubble/medium rubble hover.png" id="19_6lkgn"]
+[ext_resource type="Texture2D" uid="uid://dpfo4x4ssq8us" path="res://Removable Rubble/potting soil hover.png" id="20_8pegd"]
+[ext_resource type="Texture2D" uid="uid://cen635tdq1dco" path="res://empty pot hover.png" id="22_dr3i1"]
+[ext_resource type="Texture2D" uid="uid://bfws3tfxinraa" path="res://large shelf hover.png" id="23_6hh5s"]
+[ext_resource type="Texture2D" uid="uid://d4b0qhjppja0i" path="res://right door planks hover.png" id="24_3pq3c"]
+[ext_resource type="Texture2D" uid="uid://q6uc2jbdnkun" path="res://left door plank hover.png" id="25_inwoh"]
+[ext_resource type="Texture2D" uid="uid://1sno4hruthw" path="res://back door plank hover.png" id="26_6c8v0"]
+[ext_resource type="Texture2D" uid="uid://b0y8clbkmt3as" path="res://Buttons/One(1)OptionDialogue.png" id="27_dr3i1"]
+[ext_resource type="Texture2D" uid="uid://c0cotv503yvct" path="res://Buttons/Two(2)OptionDialogue.png" id="29_3pq3c"]
+[ext_resource type="Texture2D" uid="uid://0n7pxctq1cyi" path="res://Buttons/down arrow.png" id="30_6c8v0"]
+[ext_resource type="Texture2D" uid="uid://5s4nyru27bi6" path="res://Buttons/down arrow hovered.png" id="31_6c8v0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pq2sl"]
+size = Vector2(653, 173)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7527"]
+size = Vector2(460, 108)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58do8"]
+size = Vector2(220.5, 67.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_it8n7"]
+size = Vector2(263, 95)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mq4l8"]
+size = Vector2(178.5, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gm1qa"]
+size = Vector2(77, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_paycm"]
+size = Vector2(50, 98)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2xphn"]
+size = Vector2(87, 88)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pf53"]
+size = Vector2(215, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mu7lj"]
+size = Vector2(138.5, 46)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dpm15"]
+size = Vector2(108, 46)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6thqp"]
+size = Vector2(84, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7g0pe"]
+size = Vector2(27, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qfkde"]
+size = Vector2(18, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_os7hq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hcby4"]
+size = Vector2(30, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjelr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qlrd"]
+size = Vector2(121, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5cue"]
+size = Vector2(261, 75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3cqb"]
+size = Vector2(192, 128)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq2sl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d7527"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58do8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v5cue"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_it8n7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mq4l8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gm1qa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3cqb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6c8v0"]
+texture = ExtResource("30_6c8v0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6thqp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mecu5"]
+texture = ExtResource("31_6c8v0")
+
+[node name="Node2D" type="Node2D" unique_id=946650242]
+script = ExtResource("1_demxp")
+
+[node name="InteriorBase" type="Sprite2D" parent="." unique_id=1219855480]
+position = Vector2(584, 322.75)
+scale = Vector2(0.7021531, 0.6806589)
+texture = ExtResource("1_3y3q6")
+
+[node name="Nightinteriorwindows" type="Sprite2D" parent="." unique_id=1970199305]
+position = Vector2(563, 155)
+scale = Vector2(1.1054689, 0.92037034)
+texture = ExtResource("2_s0tvn")
+
+[node name="BackDoorPlanks" type="Sprite2D" parent="." unique_id=857025504]
+position = Vector2(647.5625, 179)
+scale = Vector2(0.6592448, 0.6638889)
+texture = ExtResource("2_0qxeo")
+
+[node name="BackDoorPlankHover" type="Sprite2D" parent="." unique_id=1283936849]
+visible = false
+position = Vector2(651, 190.99998)
+scale = Vector2(0.6875, 0.83148146)
+texture = ExtResource("26_6c8v0")
+
+[node name="RightDoorPlanks" type="Sprite2D" parent="." unique_id=167754571]
+position = Vector2(1036.0001, 252)
+scale = Vector2(0.73645824, 0.7407408)
+texture = ExtResource("5_yih8l")
+
+[node name="RightDoorPlanksHover" type="Sprite2D" parent="." unique_id=1816696907]
+visible = false
+position = Vector2(1037, 252.99998)
+scale = Vector2(0.7625, 0.79444444)
+texture = ExtResource("24_3pq3c")
+
+[node name="LeftDoorPlanks" type="Sprite2D" parent="." unique_id=2077038325]
+position = Vector2(200, 280)
+texture = ExtResource("2_iikiw")
+
+[node name="LeftDoorPlankHover" type="Sprite2D" parent="." unique_id=2035686480]
+visible = false
+position = Vector2(204, 275)
+texture = ExtResource("25_inwoh")
+
+[node name="LargeRubbleFrontArea" type="Area2D" parent="." unique_id=1092956947]
+position = Vector2(831, 542)
+
+[node name="LargeRubbleFront" type="Sprite2D" parent="LargeRubbleFrontArea" unique_id=228133061]
+position = Vector2(7.000061, -41)
+scale = Vector2(0.9062501, 0.7444444)
+texture = ExtResource("4_iflsb")
+
+[node name="LargeRubblePileFrontHover" type="Sprite2D" parent="LargeRubbleFrontArea" unique_id=163123553]
+visible = false
+position = Vector2(26.374939, 13)
+scale = Vector2(0.7830404, 0.66406244)
+texture = ExtResource("18_5xbg8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LargeRubbleFrontArea" unique_id=873458877]
+position = Vector2(31.5, 56.5)
+shape = SubResource("RectangleShape2D_pq2sl")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LargeRubbleFrontArea" unique_id=359567571]
+position = Vector2(33, -44)
+shape = SubResource("RectangleShape2D_d7527")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LargeRubbleFrontArea" unique_id=1526401043]
+position = Vector2(37.75, -125.25)
+shape = SubResource("RectangleShape2D_58do8")
+
+[node name="LargeRubbleLeftArea" type="Area2D" parent="." unique_id=1158070317]
+position = Vector2(146, 370)
+
+[node name="LargeRubbleLeft" type="Sprite2D" parent="LargeRubbleLeftArea" unique_id=1700361089]
+position = Vector2(6, 1)
+scale = Vector2(0.30403647, 0.33789063)
+texture = ExtResource("3_wfp5n")
+
+[node name="LargeRubblePileLeftHover" type="Sprite2D" parent="LargeRubbleLeftArea" unique_id=726288345]
+visible = false
+position = Vector2(3, 2)
+scale = Vector2(0.29817706, 0.36523438)
+texture = ExtResource("18_5xbg8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LargeRubbleLeftArea" unique_id=1110688728]
+position = Vector2(6.5, 28.5)
+shape = SubResource("RectangleShape2D_it8n7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LargeRubbleLeftArea" unique_id=1973572768]
+position = Vector2(4.75, -38)
+shape = SubResource("RectangleShape2D_mq4l8")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LargeRubbleLeftArea" unique_id=974964629]
+position = Vector2(10.5, -70)
+shape = SubResource("RectangleShape2D_gm1qa")
+
+[node name="EmptyTable" type="Sprite2D" parent="." unique_id=1754154615]
+position = Vector2(665, 331)
+scale = Vector2(0.6958333, 0.79444444)
+texture = ExtResource("6_m7vh1")
+
+[node name="PottingSoilArea" type="Area2D" parent="." unique_id=2051424843]
+position = Vector2(926, 230)
+
+[node name="PottingSoil" type="Sprite2D" parent="PottingSoilArea" unique_id=1978080969]
+position = Vector2(3.999939, 25)
+scale = Vector2(0.19401042, 0.19433592)
+texture = ExtResource("7_s0tvn")
+
+[node name="PottingSoilHover" type="Sprite2D" parent="PottingSoilArea" unique_id=1960522382]
+visible = false
+position = Vector2(4.5000277, 24.500021)
+scale = Vector2(0.18294266, 0.18652342)
+texture = ExtResource("20_8pegd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PottingSoilArea" unique_id=770326733]
+position = Vector2(1, 11)
+shape = SubResource("RectangleShape2D_paycm")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PottingSoilArea" unique_id=643957908]
+position = Vector2(2.5, 31)
+shape = SubResource("RectangleShape2D_2xphn")
+
+[node name="MediumRubbleArea" type="Area2D" parent="." unique_id=2057953057]
+position = Vector2(879, 255)
+
+[node name="MediumRubblePile" type="Sprite2D" parent="MediumRubbleArea" unique_id=1934362012]
+position = Vector2(4, 4)
+scale = Vector2(0.29410815, 0.39086914)
+texture = ExtResource("8_36sw1")
+
+[node name="MediumRubbleHover" type="Sprite2D" parent="MediumRubbleArea" unique_id=1626859650]
+visible = false
+position = Vector2(4.500046, 2.4999933)
+scale = Vector2(0.30013025, 0.3583984)
+texture = ExtResource("19_6lkgn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MediumRubbleArea" unique_id=1800201931]
+position = Vector2(11.5, 18.5)
+shape = SubResource("RectangleShape2D_3pf53")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MediumRubbleArea" unique_id=719311153]
+position = Vector2(25.75, -33)
+shape = SubResource("RectangleShape2D_mu7lj")
+
+[node name="EmptyPotArea" type="Area2D" parent="." unique_id=144948546]
+position = Vector2(626, 215)
+
+[node name="EmptyUsablePot" type="Sprite2D" parent="EmptyPotArea" unique_id=1181873640]
+position = Vector2(1, 2.875)
+scale = Vector2(0.18750001, 0.18530273)
+texture = ExtResource("10_q1ktq")
+
+[node name="PotWithSoil" type="Sprite2D" parent="EmptyPotArea" unique_id=761460541]
+visible = false
+position = Vector2(1.5, 3.625)
+scale = Vector2(0.19335938, 0.19604492)
+texture = ExtResource("19_6hh5s")
+
+[node name="EmptyPotHover" type="Sprite2D" parent="EmptyPotArea" unique_id=1347444894]
+visible = false
+position = Vector2(-1.4305115e-06, 6.125009)
+scale = Vector2(0.18750001, 0.19360352)
+texture = ExtResource("22_dr3i1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EmptyPotArea" unique_id=578681543]
+position = Vector2(2, -34)
+shape = SubResource("RectangleShape2D_dpm15")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="EmptyPotArea" unique_id=1434234854]
+position = Vector2(1, 19)
+shape = SubResource("RectangleShape2D_6thqp")
+
+[node name="TinyRockArea" type="Area2D" parent="." unique_id=2033613611]
+position = Vector2(153, 613)
+
+[node name="TinyRockRubble" type="Sprite2D" parent="TinyRockArea" unique_id=1962516265]
+position = Vector2(322, -181)
+texture = ExtResource("11_v4rrh")
+
+[node name="TinyRockHover" type="Sprite2D" parent="TinyRockArea" unique_id=1513501670]
+visible = false
+position = Vector2(322, -182)
+texture = ExtResource("16_a85vl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TinyRockArea" unique_id=1688638718]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_7g0pe")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TinyRockArea" unique_id=1213088251]
+position = Vector2(-24, 15)
+shape = SubResource("RectangleShape2D_qfkde")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TinyRockArea" unique_id=2115796824]
+position = Vector2(-82, -108)
+shape = SubResource("RectangleShape2D_os7hq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TinyRockArea" unique_id=1509376851]
+position = Vector2(246, -237)
+shape = SubResource("RectangleShape2D_hcby4")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TinyRockArea" unique_id=1227529186]
+position = Vector2(195, -287)
+shape = SubResource("RectangleShape2D_pjelr")
+
+[node name="SmallRubbleArea" type="Area2D" parent="." unique_id=927422818]
+position = Vector2(252, 538)
+
+[node name="SmallRubble" type="Sprite2D" parent="SmallRubbleArea" unique_id=1760582854]
+position = Vector2(59.5, -5)
+scale = Vector2(0.903125, 0.91481483)
+texture = ExtResource("12_5517d")
+
+[node name="SmallRubbleHover" type="Sprite2D" parent="SmallRubbleArea" unique_id=1330348473]
+visible = false
+position = Vector2(62, -5.25)
+scale = Vector2(0.925, 0.93981475)
+texture = ExtResource("17_ivyd8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SmallRubbleArea" unique_id=1039176425]
+position = Vector2(-23.5, -29.5)
+shape = SubResource("RectangleShape2D_0qlrd")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="SmallRubbleArea" unique_id=1048309545]
+position = Vector2(57.5, 21.5)
+shape = SubResource("RectangleShape2D_v5cue")
+
+[node name="BrokenLargeShelfArea" type="Area2D" parent="." unique_id=851486746]
+position = Vector2(374, 228)
+
+[node name="BrokenLargeShelf" type="Sprite2D" parent="BrokenLargeShelfArea" unique_id=175971084]
+position = Vector2(-2.5, 10.0000305)
+scale = Vector2(0.20377603, 0.2373047)
+texture = ExtResource("14_36sw1")
+
+[node name="LargeShelfHover" type="Sprite2D" parent="BrokenLargeShelfArea" unique_id=1018952786]
+visible = false
+position = Vector2(-1, 10)
+scale = Vector2(0.19791667, 0.24218751)
+texture = ExtResource("23_6hh5s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BrokenLargeShelfArea" unique_id=299624143]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_v3cqb")
+
+[node name="DialogueBox" type="Sprite2D" parent="." unique_id=1818358968]
+position = Vector2(357, 175)
+scale = Vector2(0.58697915, 0.7648148)
+texture = ExtResource("15_rhcas")
+
+[node name="Label" type="Label" parent="DialogueBox" unique_id=976145370]
+anchors_preset = -1
+anchor_left = 0.47500002
+anchor_top = 0.40300003
+anchor_right = 0.47500002
+anchor_bottom = 0.40300003
+offset_left = -750.7294
+offset_top = -366.67572
+offset_right = -188.52884
+offset_bottom = -170.54977
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 27
+
+[node name="Continue Sprite" type="Sprite2D" parent="DialogueBox" unique_id=1245448330]
+visible = false
+position = Vector2(8.629089, 290.60062)
+scale = Vector2(1.0921347, 0.9237012)
+texture = ExtResource("27_dr3i1")
+
+[node name="ContinueButton" type="Button" parent="DialogueBox/Continue Sprite" unique_id=1068019536]
+visible = false
+offset_left = -225.18513
+offset_top = -189.33214
+offset_right = 173.82722
+offset_bottom = -111.51134
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_d7527")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_58do8")
+text = "Continue"
+
+[node name="ChoiceBox" type="Sprite2D" parent="DialogueBox" unique_id=1530636175]
+position = Vector2(1.7036133, 264.11627)
+scale = Vector2(1.2830524, 0.9249394)
+texture = ExtResource("29_3pq3c")
+
+[node name="Choice1" type="Button" parent="DialogueBox/ChoiceBox" unique_id=640330170]
+anchors_preset = -1
+anchor_left = 0.47700003
+anchor_top = 0.224
+anchor_right = 0.47700003
+anchor_bottom = 0.224
+offset_left = -679.6627
+offset_top = -308.97052
+offset_right = -279.99472
+offset_bottom = -231.22185
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0qlrd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v5cue")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_it8n7")
+
+[node name="Choice2" type="Button" parent="DialogueBox/ChoiceBox" unique_id=19468919]
+anchors_preset = -1
+anchor_left = 0.476
+anchor_top = 0.43
+anchor_right = 0.476
+anchor_bottom = 0.43
+offset_left = -680.0306
+offset_top = -311.36234
+offset_right = -280.36255
+offset_bottom = -228.4408
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mq4l8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gm1qa")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_v3cqb")
+
+[node name="ArrowButton" type="Button" parent="." unique_id=159635547]
+offset_left = 538.0
+offset_top = 518.0
+offset_right = 719.0
+offset_bottom = 631.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_6c8v0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6thqp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_mecu5")
+
+[connection signal="input_event" from="LargeRubbleFrontArea" to="." method="_on_large_rubble_front_area_input_event"]
+[connection signal="mouse_entered" from="LargeRubbleFrontArea" to="." method="_on_large_rubble_front_area_mouse_entered"]
+[connection signal="mouse_exited" from="LargeRubbleFrontArea" to="." method="_on_large_rubble_front_area_mouse_exited"]
+[connection signal="input_event" from="LargeRubbleLeftArea" to="." method="_on_large_rubble_left_area_input_event"]
+[connection signal="mouse_entered" from="LargeRubbleLeftArea" to="." method="_on_large_rubble_left_area_mouse_entered"]
+[connection signal="mouse_exited" from="LargeRubbleLeftArea" to="." method="_on_large_rubble_left_area_mouse_exited"]
+[connection signal="input_event" from="PottingSoilArea" to="." method="_on_potting_soil_area_input_event"]
+[connection signal="mouse_entered" from="PottingSoilArea" to="." method="_on_potting_soil_area_mouse_entered"]
+[connection signal="mouse_exited" from="PottingSoilArea" to="." method="_on_potting_soil_area_mouse_exited"]
+[connection signal="input_event" from="MediumRubbleArea" to="." method="_on_medium_rubble_area_input_event"]
+[connection signal="mouse_entered" from="MediumRubbleArea" to="." method="_on_medium_rubble_area_mouse_entered"]
+[connection signal="mouse_exited" from="MediumRubbleArea" to="." method="_on_medium_rubble_area_mouse_exited"]
+[connection signal="input_event" from="EmptyPotArea" to="." method="_on_empty_pot_area_input_event"]
+[connection signal="mouse_entered" from="EmptyPotArea" to="." method="_on_empty_pot_area_mouse_entered"]
+[connection signal="mouse_exited" from="EmptyPotArea" to="." method="_on_empty_pot_area_mouse_exited"]
+[connection signal="input_event" from="TinyRockArea" to="." method="_on_tiny_rock_area_input_event"]
+[connection signal="mouse_entered" from="TinyRockArea" to="." method="_on_tiny_rock_area_mouse_entered"]
+[connection signal="mouse_exited" from="TinyRockArea" to="." method="_on_tiny_rock_area_mouse_exited"]
+[connection signal="input_event" from="SmallRubbleArea" to="." method="_on_small_rubble_area_input_event"]
+[connection signal="mouse_entered" from="SmallRubbleArea" to="." method="_on_small_rubble_area_mouse_entered"]
+[connection signal="mouse_exited" from="SmallRubbleArea" to="." method="_on_small_rubble_area_mouse_exited"]
+[connection signal="input_event" from="BrokenLargeShelfArea" to="." method="_on_broken_large_shelf_area_input_event"]
+[connection signal="mouse_entered" from="BrokenLargeShelfArea" to="." method="_on_broken_large_shelf_area_mouse_entered"]
+[connection signal="mouse_exited" from="BrokenLargeShelfArea" to="." method="_on_broken_large_shelf_area_mouse_exited"]
+[connection signal="pressed" from="DialogueBox/Continue Sprite/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="DialogueBox/ChoiceBox/Choice1" to="." method="_on_choice_1_pressed"]
+[connection signal="pressed" from="DialogueBox/ChoiceBox/Choice2" to="." method="_on_choice_2_pressed"]
+[connection signal="pressed" from="ArrowButton" to="." method="_on_arrow_button_pressed"]

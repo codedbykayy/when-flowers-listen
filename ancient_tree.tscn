@@ -1,0 +1,243 @@
+[gd_scene format=3 uid="uid://dnygt7b4ixrml"]
+
+[ext_resource type="Texture2D" uid="uid://djtroptigekak" path="res://ancient tree scene.png" id="1_l6ebe"]
+[ext_resource type="Script" uid="uid://cycujlyfh24s4" path="res://ancient_tree.gd" id="1_rg10j"]
+[ext_resource type="Theme" uid="uid://c5ai7ydih6ctf" path="res://game_theme.tres" id="2_axgli"]
+[ext_resource type="Texture2D" uid="uid://ceyuuudfst5ct" path="res://Buttons/Dialogue Box.png" id="4_x3o2s"]
+[ext_resource type="Texture2D" uid="uid://boxumrgmyqq65" path="res://Buttons/Four(4)OptionDialogue.png" id="5_l8c66"]
+[ext_resource type="Texture2D" uid="uid://b0y8clbkmt3as" path="res://Buttons/One(1)OptionDialogue.png" id="6_7vq83"]
+[ext_resource type="Texture2D" uid="uid://c0cotv503yvct" path="res://Buttons/Two(2)OptionDialogue.png" id="7_6efd3"]
+[ext_resource type="Texture2D" uid="uid://d0sinctds0hyb" path="res://name line.png" id="8_hl778"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3o2s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6efd3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8c66"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hl778"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ei6o0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h4gvr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c5326"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qgjd8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vq7e0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mqanm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_igdpv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_22bs7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq2sl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d7527"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58do8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v5cue"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_it8n7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mq4l8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gm1qa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3cqb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5xs3u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_68pf1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ax14"]
+
+[node name="AncientTree" type="Node2D" unique_id=470737213]
+script = ExtResource("1_rg10j")
+
+[node name="AncientTreeBackground" type="Sprite2D" parent="." unique_id=41031760]
+position = Vector2(576.5, 324)
+scale = Vector2(1.1927835, 1.1962963)
+texture = ExtResource("1_l6ebe")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1863612909]
+
+[node name="BlackOverlay" type="ColorRect" parent="UI" unique_id=1786399255]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="AwakeningText" type="Label" parent="UI" unique_id=1344020261]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 399.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "The Ancient Tree is Awakening..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ancienttreeui" type="Control" parent="UI" unique_id=1494617578]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme = ExtResource("2_axgli")
+
+[node name="DialogueBox" type="Sprite2D" parent="UI" unique_id=1315300881]
+position = Vector2(756.00006, 301)
+scale = Vector2(0.7177083, 0.66944444)
+texture = ExtResource("4_x3o2s")
+
+[node name="SpeakerName" type="Label" parent="UI/DialogueBox" unique_id=1523253020]
+anchors_preset = -1
+anchor_left = 0.32000002
+anchor_top = 0.165
+anchor_right = 0.32000002
+anchor_bottom = 0.165
+offset_left = -541.27844
+offset_top = -289.266
+offset_right = -419.27847
+offset_bottom = -251.26598
+theme_override_font_sizes/font_size = 20
+text = "Ancient Tree"
+
+[node name="DialogueText" type="Label" parent="UI/DialogueBox" unique_id=877465724]
+anchors_preset = -1
+anchor_left = 0.483
+anchor_top = 0.39800003
+anchor_right = 0.483
+anchor_bottom = 0.39800003
+offset_left = -753.4914
+offset_top = -359.81628
+offset_right = -205.91522
+offset_bottom = -180.5632
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 27
+text = "Ahh.. Though my strength is depleted 
+and these eyes grow weary..
+The seeds were jittery for your arrival
+and would not let me rest.."
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="ChoiceBackground" type="Sprite2D" parent="UI/DialogueBox" unique_id=1921433225]
+position = Vector2(-1.7418213, 266.3589)
+scale = Vector2(1.0616837, 0.87240666)
+texture = ExtResource("5_l8c66")
+
+[node name="Choice1" type="Button" parent="UI/DialogueBox" unique_id=1859186758]
+offset_left = -245.22507
+offset_top = 101.57676
+offset_right = 189.49191
+offset_bottom = 171.78421
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_x3o2s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6efd3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_l8c66")
+
+[node name="Choice2" type="Button" parent="UI/DialogueBox" unique_id=1428515334]
+offset_left = -242.43845
+offset_top = 197.17842
+offset_right = 189.49191
+offset_bottom = 268.87964
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hl778")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ei6o0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_h4gvr")
+
+[node name="Choice3" type="Button" parent="UI/DialogueBox" unique_id=253643650]
+offset_left = -239.65182
+offset_top = 292.7801
+offset_right = 188.09866
+offset_bottom = 367.46887
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_c5326")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qgjd8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vq7e0")
+
+[node name="Choice4" type="Button" parent="UI/DialogueBox" unique_id=1312314163]
+offset_left = -242.43839
+offset_top = 389.8755
+offset_right = 192.2786
+offset_bottom = 472.03314
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mqanm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_igdpv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_22bs7")
+
+[node name="ContinueBackground" type="Sprite2D" parent="UI/DialogueBox" unique_id=1696857994]
+position = Vector2(-9.059906e-05, 255.43567)
+scale = Vector2(1.0682149, 0.8091287)
+texture = ExtResource("6_7vq83")
+
+[node name="ContinueButton" type="Button" parent="UI/DialogueBox" unique_id=1078252898]
+visible = false
+offset_left = -241.04514
+offset_top = 100.08302
+offset_right = 189.49191
+offset_bottom = 170.29048
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_d7527")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_58do8")
+
+[node name="SeedChoiceBackground" type="Sprite2D" parent="UI/DialogueBox" unique_id=44423665]
+visible = false
+position = Vector2(-0.34838867, 262.90454)
+scale = Vector2(1.0515239, 0.8243431)
+texture = ExtResource("7_6efd3")
+
+[node name="KeepSeedButton" type="Button" parent="UI/DialogueBox" unique_id=873748111]
+visible = false
+offset_left = -239.65176
+offset_top = 100.08301
+offset_right = 189.49197
+offset_bottom = 173.27802
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0qlrd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v5cue")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_it8n7")
+text = "Keep the Seed Bestowed Upon You."
+
+[node name="ReturnSeedButton" type="Button" parent="UI/DialogueBox" unique_id=1723069794]
+visible = false
+offset_left = -241.0451
+offset_top = 195.6846
+offset_right = 185.31189
+offset_bottom = 268.87967
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mq4l8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gm1qa")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_v3cqb")
+text = "Return Your Seed to the Earth. (Redo)"
+
+[node name="NameLine" type="Sprite2D" parent="UI/DialogueBox" unique_id=1847306797]
+position = Vector2(157.44543, -294.27383)
+scale = Vector2(1.3933237, 1.4937758)
+texture = ExtResource("8_hl778")
+
+[node name="NameInput" type="LineEdit" parent="UI" unique_id=66349405]
+visible = false
+anchors_preset = -1
+anchor_left = 0.651
+anchor_top = 0.469
+anchor_right = 0.651
+anchor_bottom = 0.469
+offset_left = -128.95203
+offset_top = -23.912018
+offset_right = 128.04797
+offset_bottom = 24.087982
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5xs3u")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_68pf1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2ax14")

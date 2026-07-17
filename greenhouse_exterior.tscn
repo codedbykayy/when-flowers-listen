@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://dumwwh4ffihxy"]
+
+[ext_resource type="Script" uid="uid://cq3gfj6eehxgw" path="res://greenhouse_exterior.gd" id="1_iyjyh"]
+[ext_resource type="Texture2D" uid="uid://bimg6ndj56m55" path="res://Dead Dark Exterior.png" id="1_y4e16"]
+[ext_resource type="Texture2D" uid="uid://bu61vs0fjwf5i" path="res://Buttons/New game button.png" id="2_skf2k"]
+[ext_resource type="StyleBox" uid="uid://3gm1p2iynxoa" path="res://new_style_box_texture.tres" id="3_6kaij"]
+[ext_resource type="Texture2D" uid="uid://ck2su7lv5em8x" path="res://Buttons/Settings button.png" id="4_6kaij"]
+[ext_resource type="Texture2D" uid="uid://b62irass4118u" path="res://Buttons/New game button hover.png" id="4_ydkby"]
+[ext_resource type="Texture2D" uid="uid://d01xssjgth2jb" path="res://Buttons/Exit button.png" id="5_ydkby"]
+[ext_resource type="Texture2D" uid="uid://cixosxcj2nn6i" path="res://Buttons/Load game button hovert.png" id="6_fov2m"]
+[ext_resource type="Texture2D" uid="uid://bvgxb7pt1hi6r" path="res://Buttons/Load game buttont.png" id="6_iquyq"]
+[ext_resource type="Texture2D" uid="uid://wdx5wd0yyj8e" path="res://Buttons/Settings button hover.png" id="8_iquyq"]
+[ext_resource type="Texture2D" uid="uid://d07h82eb025g3" path="res://Buttons/Exit button hover.png" id="10_3deqx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7527"]
+texture = ExtResource("2_skf2k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2ax14"]
+texture = ExtResource("4_ydkby")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pq2sl"]
+texture = ExtResource("6_iquyq")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jnr4f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ua7y"]
+texture = ExtResource("6_fov2m")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iquyq"]
+texture = ExtResource("4_6kaij")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4dkml"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c7shy"]
+texture = ExtResource("8_iquyq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3deqx"]
+texture = ExtResource("5_ydkby")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p1mga"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyvvw"]
+texture = ExtResource("10_3deqx")
+
+[node name="Main Menu" type="Node2D" unique_id=883523538]
+script = ExtResource("1_iyjyh")
+
+[node name="DeadDarkExterior" type="Sprite2D" parent="." unique_id=1328082984]
+position = Vector2(577, 322.5)
+scale = Vector2(1.2, 1.1981481)
+texture = ExtResource("1_y4e16")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=426335661]
+
+[node name="FadeOverlay" type="ColorRect" parent="UI" unique_id=1067611342]
+z_index = 100
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="New Game Button" type="Button" parent="UI" unique_id=982863972]
+anchors_preset = -1
+offset_left = 779.0
+offset_top = 189.0
+offset_right = 985.0
+offset_bottom = 273.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_d7527")
+theme_override_styles/pressed = ExtResource("3_6kaij")
+theme_override_styles/hover = SubResource("StyleBoxTexture_2ax14")
+
+[node name="Load Game Button2" type="Button" parent="UI" unique_id=460184368]
+anchors_preset = -1
+offset_left = 782.0
+offset_top = 276.0
+offset_right = 988.0
+offset_bottom = 360.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jnr4f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_3ua7y")
+
+[node name="Settings Button3" type="Button" parent="UI" unique_id=1079605801]
+anchors_preset = -1
+offset_left = 776.0
+offset_top = 364.0
+offset_right = 982.0
+offset_bottom = 451.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_iquyq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4dkml")
+theme_override_styles/hover = SubResource("StyleBoxTexture_c7shy")
+
+[node name="Exit Button4" type="Button" parent="UI" unique_id=925254534]
+custom_minimum_size = Vector2(0, 0.84)
+anchors_preset = -1
+offset_left = 777.0
+offset_top = 452.0
+offset_right = 983.0
+offset_bottom = 536.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_3deqx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_p1mga")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wyvvw")
+
+[connection signal="pressed" from="UI/New Game Button" to="." method="_on_new_game_button_pressed"]

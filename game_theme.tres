@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://c5ai7ydih6ctf"]
+
+[ext_resource type="FontFile" uid="uid://din4p68svy456" path="res://GeistPixel-Regular-VariableFont_ELSH.ttf" id="1_1fvms"]
+
+[resource]
+default_font = ExtResource("1_1fvms")
+default_font_size = 24
