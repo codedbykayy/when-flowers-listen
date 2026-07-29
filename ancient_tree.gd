@@ -144,6 +144,7 @@ func _on_name_submitted(new_text: String) -> void:
 	if player_name == "":
 		return
 	print ("Player name saved:", player_name)
+	GameData.save_game()
 	name_input.visible = false
 	name_line.visible = false
 	dialogue_text.text = "Ahh..." + player_name + ". A name with lineage."
@@ -575,6 +576,7 @@ func _on_keep_seed_pressed():
 	keep_seed_chosen = true
 	continue_background.visible = true
 	continue_button.visible	= true	
+	GameData.save_game()
 func _on_return_seed_pressed():
 	returned_seed = false
 	seed_choice_background.visible = false

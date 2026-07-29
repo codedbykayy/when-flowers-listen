@@ -74,6 +74,7 @@ scale = Vector2(0.7484374, 0.7018518)
 texture = ExtResource("3_mecu5")
 
 [node name="ContinueButton" type="Button" parent="Continue(dark)" unique_id=1464779298]
+visible = false
 anchors_preset = -1
 anchor_left = 0.47300002
 anchor_top = 0.224
@@ -85,7 +86,6 @@ offset_right = -279.06546
 offset_bottom = -235.49304
 
 [node name="ChoiceBox" type="Sprite2D" parent="." unique_id=1445941007]
-visible = false
 position = Vector2(254.25002, 367.99997)
 scale = Vector2(0.7765625, 0.7259259)
 texture = ExtResource("4_q5qrr")

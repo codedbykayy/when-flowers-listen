@@ -15,6 +15,11 @@
 [ext_resource type="Texture2D" uid="uid://b0y8clbkmt3as" path="res://Buttons/One(1)OptionDialogue.png" id="10_4njew"]
 [ext_resource type="Texture2D" uid="uid://0n7pxctq1cyi" path="res://Buttons/down arrow.png" id="14_cn0xn"]
 [ext_resource type="Texture2D" uid="uid://5s4nyru27bi6" path="res://Buttons/down arrow hovered.png" id="15_pq4cq"]
+[ext_resource type="Texture2D" uid="uid://b5syu7sbkxlbu" path="res://basic nurture powder.png" id="16_6twop"]
+[ext_resource type="Texture2D" uid="uid://io5a31r3d63o" path="res://Buttons/bird flying.png" id="17_dbcr6"]
+[ext_resource type="Texture2D" uid="uid://21wubln8bxs7" path="res://bird sitting.png" id="17_pb8ux"]
+[ext_resource type="Texture2D" uid="uid://mmoe4dfovvmh" path="res://Buttons/basic nurture powder hover.png" id="17_t44pr"]
+[ext_resource type="Texture2D" uid="uid://25h3w34t68jn" path="res://Buttons/bird sitting hover.png" id="20_soady"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_58do8"]
 size = Vector2(51.145958, 45.833313)
@@ -53,6 +58,51 @@ texture = ExtResource("14_cn0xn")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gm1qa"]
 texture = ExtResource("15_pq4cq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_58do8"]
+texture = ExtResource("16_6twop")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3cqb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6thqp"]
+texture = ExtResource("17_t44pr")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t44pr"]
+atlas = ExtResource("17_dbcr6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_soady"]
+atlas = ExtResource("17_dbcr6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7n36b"]
+atlas = ExtResource("17_dbcr6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pq2sl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t44pr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_soady")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7n36b")
+}],
+"loop": 1,
+"name": &"fly",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7527"]
+texture = ExtResource("17_pb8ux")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gm1qa"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v3cqb"]
+texture = ExtResource("20_soady")
 
 [node name="GreenhouseExterior(Beg)" type="Node2D" unique_id=871946850]
 script = ExtResource("1_pps7v")
@@ -119,6 +169,7 @@ scale = Vector2(0.76354164, 0.63333327)
 texture = ExtResource("10_4njew")
 
 [node name="ContinueButton" type="Button" parent="." unique_id=885228989]
+visible = false
 offset_left = 777.0
 offset_top = 283.0
 offset_right = 1070.0
@@ -212,9 +263,39 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_pq2sl")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_mq4l8")
 theme_override_styles/hover = SubResource("StyleBoxTexture_gm1qa")
 
+[node name="NurturePowderButton" type="Button" parent="." unique_id=1350755634]
+visible = false
+offset_left = 286.0
+offset_top = 226.0
+offset_right = 366.0
+offset_bottom = 300.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_58do8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v3cqb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6thqp")
+
+[node name="BirdFlying" type="AnimatedSprite2D" parent="." unique_id=54465797]
+visible = false
+position = Vector2(324, 246)
+scale = Vector2(2.2500005, 2.8750002)
+sprite_frames = SubResource("SpriteFrames_pq2sl")
+animation = &"fly"
+frame_progress = 0.95887387
+flip_h = true
+
+[node name="BirdButton" type="Button" parent="." unique_id=1563404414]
+visible = false
+offset_left = 280.0
+offset_top = 210.0
+offset_right = 350.0
+offset_bottom = 289.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_d7527")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gm1qa")
+theme_override_styles/hover = SubResource("StyleBoxTexture_v3cqb")
+
 [connection signal="input_event" from="Day1WWateringCan/WaterCanArea" to="." method="_on_water_can_area_input_event"]
 [connection signal="mouse_entered" from="Day1WWateringCan/WaterCanArea" to="." method="_on_water_can_area_mouse_entered"]
 [connection signal="mouse_exited" from="Day1WWateringCan/WaterCanArea" to="." method="_on_water_can_area_mouse_exited"]
+[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="input_event" from="FrontDoor" to="." method="_on_front_door_input_event"]
 [connection signal="mouse_entered" from="FrontDoor" to="." method="_on_front_door_mouse_entered"]
 [connection signal="mouse_exited" from="FrontDoor" to="." method="_on_front_door_mouse_exited"]
@@ -224,3 +305,5 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_gm1qa")
 [connection signal="pressed" from="ChoiceBox/Choice1" to="." method="_on_choice_1_pressed"]
 [connection signal="pressed" from="ChoiceBox/Choice2" to="." method="_on_choice_2_pressed"]
 [connection signal="pressed" from="PondArrow" to="." method="_on_pond_arrow_pressed"]
+[connection signal="pressed" from="NurturePowderButton" to="." method="_on_nurture_powder_button_pressed"]
+[connection signal="pressed" from="BirdButton" to="." method="_on_bird_button_pressed"]

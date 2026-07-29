@@ -4,11 +4,22 @@
 [ext_resource type="Script" uid="uid://cwvqcyupmmbe1" path="res://pond_scene.gd" id="1_euu1u"]
 [ext_resource type="Texture2D" uid="uid://cpgo7oi7j2lc6" path="res://GONE pond scene.png" id="3_jyuj3"]
 [ext_resource type="Texture2D" uid="uid://0n7pxctq1cyi" path="res://Buttons/down arrow.png" id="3_nddw0"]
+[ext_resource type="Texture2D" uid="uid://ckk3507q7nhmj" path="res://FULL pond scene.png" id="4_2eq2q"]
 [ext_resource type="Texture2D" uid="uid://5s4nyru27bi6" path="res://Buttons/down arrow hovered.png" id="4_oe64w"]
 [ext_resource type="Texture2D" uid="uid://c4raiwgom81ir" path="res://pond hover.png" id="5_p28lt"]
 [ext_resource type="Texture2D" uid="uid://ceyuuudfst5ct" path="res://Buttons/Dialogue Box.png" id="7_wqfod"]
 [ext_resource type="Texture2D" uid="uid://b0y8clbkmt3as" path="res://Buttons/One(1)OptionDialogue.png" id="8_wqfkj"]
 [ext_resource type="Texture2D" uid="uid://c0cotv503yvct" path="res://Buttons/Two(2)OptionDialogue.png" id="9_xsrjg"]
+[ext_resource type="Texture2D" uid="uid://47a78aiudc0y" path="res://frog flipping-Sheet.png" id="10_4ape3"]
+[ext_resource type="Texture2D" uid="uid://c1tww04twl0tr" path="res://last frog frame.png" id="11_t73w4"]
+[ext_resource type="Texture2D" uid="uid://cndx8kcl57lyl" path="res://frog dying Sheet.png" id="12_x1ic2"]
+[ext_resource type="Texture2D" uid="uid://c0mekxob3jcgk" path="res://Frog Hopping Away Sheet.png" id="13_r5gd6"]
+[ext_resource type="Texture2D" uid="uid://bh4y52t2xbosn" path="res://Frog Idle Bush Sheet.png" id="14_t73w4"]
+[ext_resource type="Texture2D" uid="uid://dqgahuns8nr3x" path="res://death burst anim v04 64x64.png" id="15_x1ic2"]
+[ext_resource type="Texture2D" uid="uid://bh887dlapp4lr" path="res://Buttons/UI Box morning daisy.png" id="16_4ar8a"]
+[ext_resource type="Texture2D" uid="uid://bt2xyd0u7g2rr" path="res://hosehead.png" id="17_hjlrk"]
+[ext_resource type="PackedScene" uid="uid://bcr7hlexeh3pv" path="res://hose scene.tscn" id="17_jtk2m"]
+[ext_resource type="Texture2D" uid="uid://bwx5oae144h4j" path="res://hoseline.png" id="18_hjlrk"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pq2sl"]
 texture = ExtResource("3_nddw0")
@@ -20,12 +31,6 @@ texture = ExtResource("4_oe64w")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pq2sl"]
 size = Vector2(354, 97)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq2sl"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58do8"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jyuj3"]
 
@@ -39,19 +44,235 @@ size = Vector2(354, 97)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t73w4"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ar8a"]
+atlas = ExtResource("10_4ape3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtk2m"]
+atlas = ExtResource("10_4ape3")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjlrk"]
+atlas = ExtResource("11_t73w4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2eq2q"]
+atlas = ExtResource("12_x1ic2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_um13k"]
+atlas = ExtResource("12_x1ic2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pq2sl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ar8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtk2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjlrk")
+}],
+"loop": 0,
+"name": &"flipping",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2eq2q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_um13k")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7527"]
+size = Vector2(56.72056, 59.50946)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4oxve"]
+atlas = ExtResource("13_r5gd6")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_duvwb"]
+atlas = ExtResource("13_r5gd6")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8rwk"]
+atlas = ExtResource("13_r5gd6")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66cid"]
+atlas = ExtResource("13_r5gd6")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_da07p"]
+atlas = ExtResource("13_r5gd6")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yiqwa"]
+atlas = ExtResource("13_r5gd6")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d7527"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4oxve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_duvwb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8rwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66cid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_da07p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yiqwa")
+}],
+"loop": 1,
+"name": &"hopaway",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1ic2"]
+atlas = ExtResource("14_t73w4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5gd6"]
+atlas = ExtResource("14_t73w4")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrncg"]
+atlas = ExtResource("14_t73w4")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4v1p"]
+atlas = ExtResource("14_t73w4")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_58do8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1ic2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5gd6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrncg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4v1p")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58do8"]
+size = Vector2(48.57827, 32.800007)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmmly"]
+atlas = ExtResource("15_x1ic2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hyilo"]
+atlas = ExtResource("15_x1ic2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktha4"]
+atlas = ExtResource("15_x1ic2")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv8v8"]
+atlas = ExtResource("15_x1ic2")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7v788"]
+atlas = ExtResource("15_x1ic2")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jh10"]
+atlas = ExtResource("15_x1ic2")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0qlrd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmmly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hyilo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktha4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nv8v8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7v788")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jh10")
+}],
+"loop": 0,
+"name": &"green",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qlrd"]
+size = Vector2(33.25, 24.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5cue"]
+size = Vector2(772.25, 130.5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7527"]
+texture = ExtResource("3_nddw0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v5cue"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_it8n7"]
+texture = ExtResource("4_oe64w")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq2sl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58do8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
+
 [node name="Node2D" type="Node2D" unique_id=429996888]
 script = ExtResource("1_euu1u")
 
+[node name="GonePondScene" type="Sprite2D" parent="." unique_id=466071439]
+position = Vector2(580, 328)
+scale = Vector2(0.8, 0.597)
+texture = ExtResource("3_jyuj3")
+
 [node name="DryPondScene" type="Sprite2D" parent="." unique_id=1748569667]
+visible = false
 position = Vector2(580, 328)
 scale = Vector2(0.8, 0.599)
 texture = ExtResource("1_cstia")
 
-[node name="GonePondScene" type="Sprite2D" parent="." unique_id=466071439]
+[node name="FullPondScene" type="Sprite2D" parent="." unique_id=2146465808]
 visible = false
-position = Vector2(580, 328)
-scale = Vector2(0.8, 0.597)
-texture = ExtResource("3_jyuj3")
+position = Vector2(579.49994, 327.50003)
+scale = Vector2(0.7976518, 0.59944755)
+texture = ExtResource("4_2eq2q")
 
 [node name="HomeButton" type="Button" parent="." unique_id=993415512]
 offset_left = 624.0
@@ -64,6 +285,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_d7527")
 theme_override_styles/hover = SubResource("StyleBoxTexture_58do8")
 
 [node name="pondarea" type="Area2D" parent="." unique_id=38092484]
+visible = false
 
 [node name="PondHover" type="Sprite2D" parent="pondarea" unique_id=2098441188]
 visible = false
@@ -74,6 +296,136 @@ texture = ExtResource("5_p28lt")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="pondarea" unique_id=1852330998]
 position = Vector2(360, 449)
 shape = SubResource("RectangleShape2D_pq2sl")
+
+[node name="ChoiceBox" type="Sprite2D" parent="." unique_id=483926310]
+visible = false
+position = Vector2(228.25, 336.25)
+scale = Vector2(0.69947916, 0.55648154)
+texture = ExtResource("9_xsrjg")
+
+[node name="Choice1" type="Button" parent="ChoiceBox" unique_id=1454920577]
+anchors_preset = -1
+anchor_left = 0.47400004
+anchor_top = 0.216
+anchor_right = 0.47400004
+anchor_bottom = 0.216
+offset_left = -682.7094
+offset_top = -305.77472
+offset_right = -283.8412
+offset_bottom = -230.83632
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jyuj3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wqfod")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wqfkj")
+
+[node name="Choice2" type="Button" parent="ChoiceBox" unique_id=1610753022]
+anchors_preset = -1
+anchor_left = 0.47400004
+anchor_top = 0.42400002
+anchor_right = 0.47400004
+anchor_bottom = 0.42400002
+offset_left = -681.2798
+offset_top = -310.27448
+offset_right = -279.55234
+offset_bottom = -229.40926
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xsrjg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4ape3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t73w4")
+
+[node name="FrogDying" type="AnimatedSprite2D" parent="." unique_id=755060752]
+visible = false
+position = Vector2(543, 424.00003)
+rotation = 3.0909781
+scale = Vector2(1.0907865, 1.1427248)
+sprite_frames = SubResource("SpriteFrames_pq2sl")
+animation = &"idle"
+frame_progress = 0.7439892
+
+[node name="FrogDyingArea" type="Area2D" parent="FrogDying" unique_id=2095093058]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrogDying/FrogDyingArea" unique_id=920325138]
+position = Vector2(1.7384236, 1.8365306)
+shape = SubResource("RectangleShape2D_d7527")
+
+[node name="FrogHopAway" type="AnimatedSprite2D" parent="." unique_id=344958047]
+position = Vector2(551, 424.5)
+scale = Vector2(1.1562501, 1.2656249)
+sprite_frames = SubResource("SpriteFrames_d7527")
+animation = &"hopaway"
+frame_progress = 0.62227255
+
+[node name="FrogBush" type="AnimatedSprite2D" parent="." unique_id=1163765754]
+visible = false
+position = Vector2(1026, 282)
+scale = Vector2(1.296875, 1.25)
+sprite_frames = SubResource("SpriteFrames_58do8")
+animation = &"idle"
+frame_progress = 0.5547761
+
+[node name="FrogBushArea" type="Area2D" parent="FrogBush" unique_id=871891385]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrogBush/FrogBushArea" unique_id=980008492]
+position = Vector2(1.1567383, -1.199997)
+shape = SubResource("RectangleShape2D_58do8")
+
+[node name="FrogBushTarget" type="Marker2D" parent="." unique_id=1817723731]
+visible = false
+position = Vector2(1028, 288)
+
+[node name="FrogGreen" type="AnimatedSprite2D" parent="." unique_id=2028763759]
+visible = false
+position = Vector2(1027, 282)
+sprite_frames = SubResource("SpriteFrames_0qlrd")
+animation = &"green"
+
+[node name="HoseHeadArea" type="Area2D" parent="." unique_id=1867073632]
+position = Vector2(1045, 331)
+
+[node name="Hoseline" type="Sprite2D" parent="HoseHeadArea" unique_id=571241332]
+position = Vector2(1, -19)
+scale = Vector2(0.47560975, 0.21428573)
+texture = ExtResource("18_hjlrk")
+
+[node name="Hosehead" type="Sprite2D" parent="HoseHeadArea" unique_id=152063016]
+position = Vector2(9.536743e-07, -2)
+scale = Vector2(0.352459, 0.46969697)
+texture = ExtResource("17_hjlrk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HoseHeadArea" unique_id=1426940682]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_0qlrd")
+
+[node name="HoseStart" type="Marker2D" parent="." unique_id=1925520978]
+position = Vector2(1045, 299)
+
+[node name="hosedrop" type="Area2D" parent="." unique_id=422834159]
+position = Vector2(725, 412)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hosedrop" unique_id=609167093]
+visible = false
+position = Vector2(-189.875, 22.75)
+shape = SubResource("RectangleShape2D_v5cue")
+
+[node name="UiBoxMorningDaisy" type="Sprite2D" parent="." unique_id=1190442296]
+visible = false
+position = Vector2(590, 325)
+scale = Vector2(1.28125, 1.3555555)
+texture = ExtResource("16_4ar8a")
+
+[node name="CloseArrow" type="Button" parent="UiBoxMorningDaisy" unique_id=545984182]
+offset_left = -84.29268
+offset_top = 144.59015
+offset_right = 84.29265
+offset_bottom = 246.3934
+theme_override_styles/normal = SubResource("StyleBoxTexture_d7527")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v5cue")
+theme_override_styles/hover = SubResource("StyleBoxTexture_it8n7")
+
+[node name="HoseEvent" parent="." unique_id=487781891 instance=ExtResource("17_jtk2m")]
+visible = false
+position = Vector2(229, 96)
+scale = Vector2(0.65, 0.65)
 
 [node name="DialogueBox" type="Sprite2D" parent="." unique_id=214885390]
 visible = false
@@ -87,7 +439,7 @@ offset_top = -143.60521
 offset_right = 252.50613
 offset_bottom = 31.089767
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 27
 
 [node name="ContinueSprite" type="Sprite2D" parent="." unique_id=1133987541]
 visible = false
@@ -106,43 +458,15 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_58do8")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_0qlrd")
 text = "Continue"
 
-[node name="ChoiceBox" type="Sprite2D" parent="." unique_id=483926310]
-visible = false
-position = Vector2(228.25, 336.25)
-scale = Vector2(0.69947916, 0.55648154)
-texture = ExtResource("9_xsrjg")
-
-[node name="Choice1" type="Button" parent="ChoiceBox" unique_id=1454920577]
-anchors_preset = -1
-anchor_left = 0.47400004
-anchor_top = 0.216
-anchor_right = 0.47400004
-anchor_bottom = 0.216
-offset_left = -682.7094
-offset_top = -305.77472
-offset_right = -283.8412
-offset_bottom = -230.83632
-theme_override_styles/normal = SubResource("StyleBoxEmpty_jyuj3")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_wqfod")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_wqfkj")
-
-[node name="Choice2" type="Button" parent="ChoiceBox" unique_id=1610753022]
-anchors_preset = -1
-anchor_left = 0.47400004
-anchor_top = 0.42400002
-anchor_right = 0.47400004
-anchor_bottom = 0.42400002
-offset_left = -681.2798
-offset_top = -310.27448
-offset_right = -279.55234
-offset_bottom = -229.40926
-theme_override_styles/normal = SubResource("StyleBoxEmpty_xsrjg")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_4ape3")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_t73w4")
-
 [connection signal="pressed" from="HomeButton" to="." method="_on_home_button_pressed"]
 [connection signal="input_event" from="pondarea" to="." method="_on_pondarea_input_event"]
 [connection signal="mouse_entered" from="pondarea" to="." method="_on_pondarea_mouse_entered"]
 [connection signal="mouse_shape_exited" from="pondarea" to="." method="_on_pondarea_mouse_shape_exited"]
-[connection signal="pressed" from="ContinueSprite/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="ChoiceBox/Choice1" to="." method="_on_choice_1_pressed"]
+[connection signal="input_event" from="FrogDying/FrogDyingArea" to="." method="_on_frog_dying_area_input_event"]
+[connection signal="input_event" from="FrogBush/FrogBushArea" to="." method="_on_frog_bush_area_input_event"]
+[connection signal="input_event" from="HoseHeadArea" to="." method="_on_hose_head_area_input_event"]
+[connection signal="pressed" from="UiBoxMorningDaisy/CloseArrow" to="." method="_on_close_arrow_pressed"]
+[connection signal="hose_untangled" from="HoseEvent" to="." method="_on_hose_event_hose_untangled"]
+[connection signal="water_on" from="HoseEvent" to="." method="_on_hose_event_water_on"]
+[connection signal="pressed" from="ContinueSprite/ContinueButton" to="." method="_on_continue_button_pressed"]

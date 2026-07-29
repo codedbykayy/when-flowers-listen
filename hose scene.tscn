@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://bcr7hlexeh3pv"]
+
+[ext_resource type="Script" uid="uid://54jokoqjloxb" path="res://hose_scene.gd" id="1_grnu0"]
+[ext_resource type="Texture2D" uid="uid://k8s72o0phqpp" path="res://hose scene.png" id="1_stubg"]
+[ext_resource type="Texture2D" uid="uid://jnqmt4m0w3b5" path="res://hose-export no handle.png" id="2_3x626"]
+[ext_resource type="Texture2D" uid="uid://brrdythh3ko7d" path="res://underhose short.png" id="3_grnu0"]
+[ext_resource type="Texture2D" uid="uid://6chla6ohnqij" path="res://underhose long.png" id="4_yyub4"]
+[ext_resource type="Texture2D" uid="uid://7pa1a7bh7gtc" path="res://knot1 .png" id="5_c0obi"]
+[ext_resource type="Texture2D" uid="uid://bc3v8x4gffl8h" path="res://knot1 hover.png" id="6_tljqx"]
+[ext_resource type="Texture2D" uid="uid://bj2c6kd4h1rm4" path="res://knot2 .png" id="7_xdb0a"]
+[ext_resource type="Texture2D" uid="uid://vrqm6jw0f822" path="res://knot2 hover.png" id="8_7y8yd"]
+[ext_resource type="Texture2D" uid="uid://byvjt6i3x10i1" path="res://knot3.png" id="9_rb2j8"]
+[ext_resource type="Texture2D" uid="uid://dca023fqwl6im" path="res://knot3 hover.png" id="10_n1irc"]
+[ext_resource type="Texture2D" uid="uid://4pj7hh6wd3ux" path="res://frog.png" id="11_ipvlk"]
+[ext_resource type="Texture2D" uid="uid://dlmq8orotsm63" path="res://medium rubble hose.png" id="12_x7q4l"]
+[ext_resource type="Texture2D" uid="uid://hrekxpi81pub" path="res://medium rubble hose hover.png" id="13_3x626"]
+[ext_resource type="Texture2D" uid="uid://c5jx6pys18txl" path="res://small rubble pile hose.png" id="13_5pgku"]
+[ext_resource type="Texture2D" uid="uid://cnda4yiiw8ncy" path="res://small rubble pile hosee.png" id="15_grnu0"]
+[ext_resource type="Texture2D" uid="uid://bjry0man8la78" path="res://front bushes.png" id="15_spsd7"]
+[ext_resource type="Texture2D" uid="uid://dfra55kongeyw" path="res://hose handle.png" id="16_1sres"]
+[ext_resource type="Texture2D" uid="uid://dujqsl42sq585" path="res://hose handle hover.png" id="17_6mfd6"]
+[ext_resource type="Texture2D" uid="uid://b6rukqhdsva12" path="res://hose handle flipped.png" id="20_yyub4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0qlrd"]
+texture = ExtResource("5_c0obi")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mq4l8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yyub4"]
+texture = ExtResource("6_tljqx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pq2sl"]
+texture = ExtResource("7_xdb0a")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlrd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c0obi"]
+texture = ExtResource("8_7y8yd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7527"]
+texture = ExtResource("9_rb2j8")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v5cue"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gm1qa"]
+texture = ExtResource("10_n1irc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_58do8"]
+texture = ExtResource("12_x7q4l")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_it8n7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v3cqb"]
+texture = ExtResource("13_3x626")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dpm15"]
+texture = ExtResource("13_5pgku")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6thqp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ar8a"]
+texture = ExtResource("15_grnu0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6thqp"]
+texture = ExtResource("16_1sres")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_paycm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hjlrk"]
+texture = ExtResource("17_6mfd6")
+
+[node name="Node2D" type="Node2D" unique_id=487781891]
+script = ExtResource("1_grnu0")
+
+[node name="HoseScene" type="Sprite2D" parent="." unique_id=225285926]
+position = Vector2(578, 328.5)
+scale = Vector2(1.2166667, 1.2277777)
+texture = ExtResource("1_stubg")
+
+[node name="HoseExportNoHandle" type="Sprite2D" parent="." unique_id=1675292418]
+position = Vector2(705, 173.00002)
+scale = Vector2(0.63576555, 0.5454545)
+texture = ExtResource("2_3x626")
+
+[node name="UnderhoseShort" type="Sprite2D" parent="." unique_id=668570730]
+position = Vector2(700.99994, 438.99997)
+scale = Vector2(1.9580001, 0.75799996)
+texture = ExtResource("3_grnu0")
+
+[node name="UnderhoseLong" type="Sprite2D" parent="." unique_id=1931525288]
+visible = false
+position = Vector2(692, 454.5)
+scale = Vector2(2.004, 0.81000006)
+texture = ExtResource("4_yyub4")
+
+[node name="Knot1" type="Button" parent="." unique_id=1390761353]
+offset_left = 876.0
+offset_top = 338.0
+offset_right = 1014.0
+offset_bottom = 441.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0qlrd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mq4l8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yyub4")
+
+[node name="Knot2" type="Button" parent="." unique_id=756556557]
+offset_left = 403.0
+offset_top = 392.0
+offset_right = 547.0
+offset_bottom = 521.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_pq2sl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0qlrd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_c0obi")
+
+[node name="Knot3" type="Button" parent="." unique_id=1328586647]
+offset_left = 785.0
+offset_top = 460.0
+offset_right = 998.0
+offset_bottom = 601.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_d7527")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v5cue")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gm1qa")
+
+[node name="Frog" type="Sprite2D" parent="." unique_id=50111080]
+position = Vector2(263, 285)
+scale = Vector2(4.220588, 4.59)
+texture = ExtResource("11_ipvlk")
+
+[node name="mediumrubble" type="Button" parent="." unique_id=1979634347]
+offset_left = 528.0
+offset_top = 383.0
+offset_right = 1170.0
+offset_bottom = 677.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_58do8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_it8n7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_v3cqb")
+
+[node name="smallrubble" type="Button" parent="." unique_id=904309443]
+offset_left = 155.0
+offset_top = 251.0
+offset_right = 642.0
+offset_bottom = 503.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_dpm15")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6thqp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4ar8a")
+
+[node name="FrontBushes" type="Sprite2D" parent="." unique_id=1961559184]
+position = Vector2(578.5, 533.00006)
+scale = Vector2(1.2114583, 1.3944445)
+texture = ExtResource("15_spsd7")
+
+[node name="hosehandle" type="Button" parent="." unique_id=219682109]
+offset_left = 419.0
+offset_top = -11.0
+offset_right = 551.0
+offset_bottom = 142.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_6thqp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_paycm")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hjlrk")
+
+[node name="HoseHandleFlipped" type="Sprite2D" parent="." unique_id=988326342]
+visible = false
+position = Vector2(412.5, 63.75)
+scale = Vector2(0.79374975, 0.752551)
+texture = ExtResource("20_yyub4")
+
+[connection signal="pressed" from="Knot1" to="." method="_on_knot_1_pressed"]
+[connection signal="pressed" from="Knot2" to="." method="_on_knot_2_pressed"]
+[connection signal="pressed" from="Knot3" to="." method="_on_knot_3_pressed"]
+[connection signal="pressed" from="mediumrubble" to="." method="_on_mediumrubble_pressed"]
+[connection signal="pressed" from="smallrubble" to="." method="_on_smallrubble_pressed"]
+[connection signal="pressed" from="hosehandle" to="." method="_on_hosehandle_pressed"]

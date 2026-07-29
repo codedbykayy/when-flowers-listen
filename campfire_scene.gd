@@ -11,6 +11,7 @@ extends Node2D
 @onready var back_button=$BackButton
 @onready var label_1=$Journal/Label1
 @onready var label_2=$Journal/Label2
+var leaving_scene:=false
 var campfire_stage=0
 
 
@@ -53,9 +54,22 @@ func _on_choice_1_pressed() -> void:
 		back_button.visible = true
 		pass
 func _on_choice_2_pressed() -> void:
-	if campfire_stage ==1:
+	if leaving_scene:
+		return
+	leaving_scene=true
+	dialogue_box.visible=false
+	choice_box.visible=false
+	choice_1.visible=false
+	choice_2.visible=false
+	if campfire_stage==1 and GameData.first_sprout_dialogue_seen:
+		GameData.current_day=3
+		GameData.save_game()
+		get_tree().change_scene_to_file("res://Interior.tscn")
+	
+	elif campfire_stage ==1:
 		GameData.current_day=2
 		GameData.exterior_stage =5
+		GameData.save_game()
 		get_tree().change_scene_to_file("res://Interior.tscn")
 		
 

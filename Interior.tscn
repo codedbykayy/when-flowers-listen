@@ -31,6 +31,9 @@
 [ext_resource type="Texture2D" uid="uid://c0cotv503yvct" path="res://Buttons/Two(2)OptionDialogue.png" id="29_3pq3c"]
 [ext_resource type="Texture2D" uid="uid://0n7pxctq1cyi" path="res://Buttons/down arrow.png" id="30_6c8v0"]
 [ext_resource type="Texture2D" uid="uid://5s4nyru27bi6" path="res://Buttons/down arrow hovered.png" id="31_6c8v0"]
+[ext_resource type="Texture2D" uid="uid://bfjmx354tdxi" path="res://baby sprout sprouting Sheet.png" id="32_htgtm"]
+[ext_resource type="Texture2D" uid="uid://th4h44wqey03" path="res://Baby Sprout Idle Sheet.png" id="33_oxlty"]
+[ext_resource type="Texture2D" uid="uid://dr5ulkjdxtc66" path="res://baby sprout jumping sheet.png" id="34_qnrqi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pq2sl"]
 size = Vector2(653, 173)
@@ -115,6 +118,139 @@ texture = ExtResource("30_6c8v0")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mecu5"]
 texture = ExtResource("31_6c8v0")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea084"]
+atlas = ExtResource("32_htgtm")
+region = Rect2(0, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8iu6k"]
+atlas = ExtResource("32_htgtm")
+region = Rect2(300, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcu14"]
+atlas = ExtResource("32_htgtm")
+region = Rect2(600, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kppdf"]
+atlas = ExtResource("32_htgtm")
+region = Rect2(900, 0, 300, 300)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d7527"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ea084")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8iu6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcu14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kppdf")
+}],
+"loop": 0,
+"name": &"sprouting",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5l37"]
+atlas = ExtResource("33_oxlty")
+region = Rect2(0, 0, 290, 227)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hs6x"]
+atlas = ExtResource("33_oxlty")
+region = Rect2(290, 0, 290, 227)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uaqcp"]
+atlas = ExtResource("33_oxlty")
+region = Rect2(580, 0, 290, 227)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6ula"]
+atlas = ExtResource("33_oxlty")
+region = Rect2(870, 0, 290, 227)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhdra"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(0, 0, 275, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwwrk"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(275, 0, 275, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65tev"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(550, 0, 275, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8cl6r"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(825, 0, 275, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcke8"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(1100, 0, 275, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7137f"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(1375, 0, 275, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0arr2"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(1650, 0, 275, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rdrj"]
+atlas = ExtResource("34_qnrqi")
+region = Rect2(1925, 0, 275, 244)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_58do8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5l37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hs6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uaqcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6ula")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhdra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwwrk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65tev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8cl6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcke8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7137f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0arr2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rdrj")
+}],
+"loop": 0,
+"name": &"jumping",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D" unique_id=946650242]
 script = ExtResource("1_demxp")
@@ -362,6 +498,7 @@ position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_v3cqb")
 
 [node name="DialogueBox" type="Sprite2D" parent="." unique_id=1818358968]
+visible = false
 position = Vector2(357, 175)
 scale = Vector2(0.58697915, 0.7648148)
 texture = ExtResource("15_rhcas")
@@ -399,6 +536,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_58do8")
 text = "Continue"
 
 [node name="ChoiceBox" type="Sprite2D" parent="DialogueBox" unique_id=1530636175]
+visible = false
 position = Vector2(1.7036133, 264.11627)
 scale = Vector2(1.2830524, 0.9249394)
 texture = ExtResource("29_3pq3c")
@@ -439,6 +577,24 @@ offset_bottom = 631.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6c8v0")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6thqp")
 theme_override_styles/hover = SubResource("StyleBoxTexture_mecu5")
+
+[node name="SeedSprouting" type="AnimatedSprite2D" parent="." unique_id=2141825904]
+visible = false
+position = Vector2(639, 145)
+scale = Vector2(0.65499973, 0.63166666)
+sprite_frames = SubResource("SpriteFrames_d7527")
+animation = &"sprouting"
+frame = 3
+frame_progress = 1.0
+
+[node name="Sprout" type="AnimatedSprite2D" parent="." unique_id=2042545019]
+visible = false
+position = Vector2(629, 116.00001)
+scale = Vector2(0.6137931, 0.7202643)
+sprite_frames = SubResource("SpriteFrames_58do8")
+animation = &"jumping"
+frame = 7
+frame_progress = 1.0
 
 [connection signal="input_event" from="LargeRubbleFrontArea" to="." method="_on_large_rubble_front_area_input_event"]
 [connection signal="mouse_entered" from="LargeRubbleFrontArea" to="." method="_on_large_rubble_front_area_mouse_entered"]
